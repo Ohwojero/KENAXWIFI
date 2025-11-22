@@ -12,7 +12,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-black py-20 md:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-br -mt-5 from-white to-gray-50 dark:from-gray-900 dark:to-black py-20 md:py-32">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -36,18 +36,27 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.div
-            className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            <Wifi size={16} />
-            <span className="text-sm font-semibold">Unlimited Internet. Zero Limits.</span>
-          </motion.div>
+        <motion.div
+          className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-primary -mt-6 dark:text-white"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+        >
+          KENAX WIFI
+        </motion.div>
+
+        <motion.div
+          className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.2 }}
+        >
+          <Wifi size={16} />
+          <span className="text-sm font-semibold">Unlimited Internet. Zero Limits.</span>
+        </motion.div>
 
           <motion.h1
-            className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-primary"
+            className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-primary"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}

@@ -6,14 +6,14 @@ import { Check, MessageCircle } from "lucide-react"
 const plans = [
   {
     name: "Starter",
-    speed: "10 Mbps",
+    speed: "2 Mbps",
     price: "₦3,500",
     period: "/month",
     features: ["Unlimited Data", "10 Mbps Speed", "Basic Support", "1 Device Connected"],
   },
   {
     name: "Professional",
-    speed: "50 Mbps",
+    speed: "3 Mbps",
     price: "₦7,500",
     period: "/month",
     features: ["Unlimited Data", "50 Mbps Speed", "Priority Support", "5 Devices Connected"],

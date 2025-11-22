@@ -22,7 +22,7 @@ export default function Header({ isDark }: { isDark: boolean }) {
             <img
               src="/images/whatsapp-20image-202025-11-21-20at-208.jpeg"
               alt="KENAX WIFI"
-              className="h-12 w-auto mr-2"
+              className="h-8 w-auto mr-2 rounded-full"
             />
           </div>
 
