@@ -7,24 +7,24 @@ const plans = [
   {
     name: "Starter",
     speed: "2 Mbps",
-    price: "₦3,500",
+    price: "₦6,500",
     period: "/month",
-    features: ["Unlimited Data", "10 Mbps Speed", "Basic Support", "1 Device Connected"],
+    features: ["Unlimited Data", "2 Mbps Speed", "More better for minimum 3", "active Connection"],
   },
   {
     name: "Professional",
     speed: "3 Mbps",
-    price: "₦7,500",
+    price: "₦13,500",
     period: "/month",
-    features: ["Unlimited Data", "50 Mbps Speed", "Priority Support", "5 Devices Connected"],
+    features: ["Unlimited Data", "3 Mbps Speed", "More better for minimum 3", "active connections"],
     popular: true,
   },
   {
     name: "Enterprise",
-    speed: "100 Mbps",
-    price: "₦12,500",
+    speed: "10 Mbps",
+    price: "₦26,000",
     period: "/month",
-    features: ["Unlimited Data", "100 Mbps Speed", "24/7 Premium Support", "10 Devices Connected"],
+    features: ["Unlimited Data", "10 Mbps Speed", "24/7 customer Support", "minimum 20 active connections"],
   },
 ]
 

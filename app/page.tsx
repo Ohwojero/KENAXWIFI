@@ -54,7 +54,7 @@ export default function Home() {
       <Pricing />
       <Accessories />
       <Features />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <FAQ />
       <Contact />
       <Footer isDark={isDark} />

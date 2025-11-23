@@ -24,6 +24,10 @@ export default function Header({ isDark }: { isDark: boolean }) {
               alt="KENAX WIFI"
               className="h-8 w-auto mr-2 rounded-full"
             />
+            <span className="font-extrabold text-lg ml-1">
+              <span className="text-black dark:text-white">KENAX </span>
+              <span className="text-primary">WIFI</span>
+            </span>
           </div>
 
           {/* Navigation - Desktop */}

@@ -40,7 +40,7 @@ export default function Features() {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Why Choose <span className="text-primary">KENAX WIFI</span>
           </h2>
-          <p className="text-xl text-muted-foreground">Unmatched speed, reliability, and service</p>
+          <p className="text-xl text-muted-foreground">Unmatched speed, Stable and Reliable Internet and Quality Service, </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">

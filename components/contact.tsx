@@ -34,13 +34,14 @@ export default function Contact() {
             {
               icon: Mail,
               title: "Email",
-              value: "support@kenaxwifi.com",
+              value: "support@kenaxwifi.com\nkenaxengr.rodney@outlook.com",
               link: "mailto:support@kenaxwifi.com",
+              
             },
             {
               icon: MapPin,
               title: "Coverage Areas",
-              value: "Lagos • Ibadan • Abuja",
+              value: "OBIARUKU-UMUTU-EBEDEI-AMAI-UMUEBU-ABRAKA-UROKA",
               link: "#",
             },
           ].map((contact, index) => {
@@ -62,7 +63,15 @@ export default function Contact() {
                   <Icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{contact.title}</h3>
-                <p className="text-primary hover:underline">{contact.value}</p>
+                {contact.title === "Email" ? (
+                  contact.value.split("\n").map((email, i) => (
+                    <p key={i} className="text-primary hover:underline">
+                      {email}
+                    </p>
+                  ))
+                ) : (
+                  <p className="text-primary hover:underline">{contact.value}</p>
+                )}
               </motion.a>
             )
           })}

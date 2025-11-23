@@ -11,31 +11,26 @@ const accessories = [
   {
     name: "WiFi Router Pro",
     image: "/high-performance-dual-band-wifi-router-with-antenn.jpg",
-    price: "₦15,000",
     description: "High-performance dual-band router",
   },
   {
     name: "MiFi Device",
     image: "/portable-mifi-hotspot-mobile-device-white.jpg",
-    price: "₦12,000",
     description: "Portable WiFi hotspot device",
   },
   {
     name: "WiFi Booster",
     image: "/wifi-signal-booster-extender-device.jpg",
-    price: "₦8,000",
     description: "Extend your WiFi signal reach",
   },
   {
     name: "Mesh WiFi System",
     image: "/mesh-wifi-system-router-whole-home-coverage.jpg",
-    price: "₦25,000",
     description: "Whole-home coverage system",
   },
   {
     name: "Network Cable",
     image: "/cat6-ethernet-network-cable-coiled.jpg",
-    price: "₦2,000",
     description: "Cat6 high-speed cable (10m)",
   },
 ]
@@ -90,9 +85,9 @@ export default function Accessories() {
 
                   <h3 className="text-base sm:text-lg font-bold mb-2">{item.name}</h3>
                   <p className="text-muted-foreground text-xs sm:text-sm mb-4">{item.description}</p>
-                  <div className="flex items-center justify-between">
+                  {/* <div className="flex items-center justify-between">
                     <span className="text-lg sm:text-2xl font-bold text-primary">{item.price}</span>
-                  </div>
+                  </div> */}
                 </motion.div>
               </SwiperSlide>
             ))}

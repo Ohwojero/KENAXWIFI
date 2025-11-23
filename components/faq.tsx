@@ -7,13 +7,18 @@ import { useState } from "react"
 const faqs = [
   {
     question: "How do I subscribe to KENAX WIFI?",
-    answer:
-      'Subscribing is simple! Click "Get Connected" or "Chat on WhatsApp" to reach our team. They\'ll guide you through the process and get you connected in no time.',
+    answer: (
+      <>
+        Subscribing is simple! Click "Get Connected" or "Chat on WhatsApp" to reach our team. They'll guide you through the process and get you connected in no time.
+        <br />
+        For support, contact us at <a href="mailto:support@kenaxwifi.com" className="text-primary underline">support@kenaxwifi.com</a> or <a href="mailto:kenaxengr.rodney@outlook.com" className="text-primary underline">kenaxengr.rodney@outlook.com</a>.
+      </>
+    ),
   },
   {
     question: "What speeds can I expect?",
     answer:
-      "We offer plans from 10 Mbps up to 100 Mbps depending on your chosen package. All speeds are unlimited data with no throttling.",
+      "We offer plans from 2 Mbps up to 1000 Mbps depending on your chosen package. All speeds are unlimited data with no throttling.",
   },
   {
     question: "What devices are supported?",
@@ -33,7 +38,7 @@ const faqs = [
   {
     question: "What payment methods do you accept?",
     answer:
-      "We accept bank transfers, card payments, and mobile money. Flexible payment plans are available for longer commitments.",
+      "We accept bank transfers, card payments, and mobile money. Flexible payment plans are available for longer commitments. Over time,there will be an online integrtion where clients can easy renewal payments through our website.",
   },
 ]
 
@@ -86,7 +91,11 @@ export default function FAQ() {
                     className="overflow-hidden"
                   >
                     <div className="px-6 py-4 bg-card border-t border-border">
-                      <p className="text-muted-foreground">{faq.answer}</p>
+                      {typeof faq.answer === "string" ? (
+                        <p className="text-muted-foreground">{faq.answer}</p>
+                      ) : (
+                        <div className="text-muted-foreground">{faq.answer}</div>
+                      )}
                     </div>
                   </motion.div>
                 )}
