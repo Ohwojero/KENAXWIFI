@@ -36,14 +36,14 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-        <motion.div
+        {/* <motion.div
           className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-primary -mt-6 dark:text-white"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
         >
           KENAX WIFI
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6"
